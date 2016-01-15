@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="action_settings">Settings</string>
+    <string name="register_a_click">Register a Click</string>
+    <string name="toggle_image">Toggle Image</string>
+</resources>
