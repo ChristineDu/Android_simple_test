@@ -14,25 +14,33 @@
 
     <TextView android:id="@+id/text_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No Clicks Yet" />
+        android:layout_height="30dp"
+        android:paddingLeft="1dp"
+        android:text="@string/initial" />
 
     <Button android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/text_id"
+        android:textAllCaps="false"
         android:text="@string/register_a_click"
         android:onClick="Register"/>
+
     <Button android:id="@+id/toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@id/register"
         android:text="@string/toggle_image"
         android:onClick="toggle"/>
-    <menu
-        xmlns:android="http://schemas.android.com/apk/res/android">
-        <item
-            android:id="@+id/reset"
-            android:title="Reset"/>
 
-    </menu>
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/icon"
+        android:contentDescription="dog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dog"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
